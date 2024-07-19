@@ -1,0 +1,33 @@
+/* #con
+{
+    height: 350px;
+    width: 500px;
+    background-color: blue;
+    margin: 50px;
+}
+
+
+
+ol{
+    padding-top:10px ;
+   
+}
+
+ li{
+    background-color: aqua;
+    margin: 20px 40px 0px 0px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+ 
+}
+li:hover
+{
+    background-color: red;
+    color: white;
+    text-decoration: underline;   
+} */
+
+
+
+ 

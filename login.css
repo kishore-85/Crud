@@ -1,0 +1,47 @@
+
+body{
+    margin: 0%;
+}
+.container{
+    background-color: antiquewhite;
+    width: 600px;
+    height: 500px;
+    margin: 10% 0 0 35%;
+}
+.con2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+
+label,input{
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+   margin-left: 100px;
+}
+
+/* .container{
+    padding: 10px 0px 0px 30px;
+    text-align: center;
+}
+.con1{
+    margin-top: 10px;
+    
+}
+
+input{
+    padding:5px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 5px;
+} */ 

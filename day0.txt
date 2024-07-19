@@ -1,0 +1,21 @@
+Meta tags & its type?
+
+Tags and element?--- HTML element=> <h1>hello</h1>
+
+                    tag    => <h1>
+
+                              </h1>
+         
+                    void element => Does't contain closing tag. ex:<a>,<img>
+
+
+attributes ====> Provides an additional information/Characteristics.
+
+
+
+
+
+
+
+
+

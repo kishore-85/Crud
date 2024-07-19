@@ -1,0 +1,48 @@
+body{
+    margin:0;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: antiquewhite;
+    position:absolute;  
+    
+}
+
+#r-1-l{
+    width: 15%;
+    float: left;
+    margin-left: 150px;
+}
+
+#r-1-l2{
+    width: 45%;
+    float: left;
+    padding: 20px 10px;
+}
+
+#r-1-c{
+    width: 7%;
+    float: left;
+    padding: 20px 10px;
+}
+
+#r-1-c2{
+    width: 7%;
+    float: left;
+    padding: 20px 10px;
+}
+
+#r-1-r{
+    width: 7%;
+    float: right;
+    padding: 20px 10px;
+}
+
+#search{
+    padding: 8px 460px 8px 10px;
+}
+
+.i-li{
+    padding: 10px;
+}
