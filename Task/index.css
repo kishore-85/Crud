@@ -1,0 +1,71 @@
+body{
+margin: 0%;
+}
+
+#header{
+    height: 70px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;   
+    box-sizing: border-box;
+}
+
+.header-cls{
+    padding-top: 20px;
+}
+.header-cls a{
+    text-decoration: none;
+}
+ a:hover{
+    background-color: #ceddeb;
+    padding: 32px 45px;
+    
+}
+
+#header-img{
+    width: 80px;
+    height: 70px;
+    border-radius: 40px;
+    padding: 2px;
+    filter: drop-shadow(0px 0px 5px green);
+}
+
+#header-sub-img{
+    border-radius: 100px;
+}
+
+#container{
+    margin: 2% 22%;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 55%;
+    height: 800px;
+    background-color: honeydew;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "con1 con2 con2"
+                          "con3 con4 con5";
+}
+
+#con-1{
+    grid-area: con1;   
+   
+}
+
+#con-2{
+    grid-area: con2;
+}
+
+#con-3{
+    grid-area: con3;
+}
+
+#con-4{
+    grid-area: con4;
+}
+
+#con-5{
+    grid-area: con5;
+}
