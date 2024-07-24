@@ -48,10 +48,12 @@ margin: 0%;
     grid-template-areas: "con1 con2 con2"
                           "con3 con4 con5";
 }
-
+/* #container{
+    position: relative;
+} */
 #con-1{
     grid-area: con1;   
-   
+    position: relative;
 }
 
 #con-2{
@@ -68,4 +70,26 @@ margin: 0%;
 
 #con-5{
     grid-area: con5;
+}
+
+#con-1-container{
+    display: none;
+    position: absolute;
+}
+#con-1:hover #con-1-container{
+    display: inline-block;    
+}
+
+
+.container{
+    position: relative;
+}
+
+.content{
+    display: none;
+    position: absolute;
+}
+
+.container:hover .content{
+    display:block ;
 }
