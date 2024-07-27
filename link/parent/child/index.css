@@ -1,0 +1,37 @@
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(150, 120, 81);
+    display: grid; 
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "home parent child"; 
+}
+
+/* .content{
+    background-color: azure;
+    width: 60%;
+    height: 700px;
+    margin-left:10% ;
+} */
+.iframe{
+    position: relative;
+    left: 80%;
+    width: 600px;
+    height: 500px;
+
+}
+
+#home{
+    grid-area: home;
+}
+#parent{
+    background-color: rgb(121, 117, 112);
+    grid-area: parent;
+}
+
+#child{
+    background-color: brown;
+    grid-area: child;
+}
