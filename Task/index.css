@@ -1,5 +1,7 @@
 body{
-margin: 0%;
+margin: 
+
+0%;
 }
 
 #header{
@@ -11,7 +13,7 @@ margin: 0%;
     box-sizing: border-box;
 }
 
-.header-cls{
+/* .header-cls{
     padding-top: 20px;
 }
 .header-cls a{
@@ -20,6 +22,19 @@ margin: 0%;
  a:hover{
     background-color: #ceddeb;
     padding: 32px 45px;
+    
+} */
+
+.img-hover{
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    padding: 33px 50px;
+}
+
+.img-hover:hover{
+    background-color: antiquewhite;
+   
     
 }
 
@@ -77,7 +92,7 @@ margin: 0%;
     position: absolute;
 }
 #con-1:hover #con-1-container{
-    display: inline-block;    
+    display: block;    
 }
 
 
@@ -93,3 +108,50 @@ margin: 0%;
 .container:hover .content{
     display:block ;
 }
+ 
+body{
+    background-color: yellow;
+}
+
+
+#media-qr{
+    width: 280px;
+    height: 350px;
+}
+@media screen  and (max-width:600px){
+   body{
+       background-color: red;
+       margin: 0%;
+   }
+}
+
+ @media screen and (min-width:601px)and (max-width:900px){
+    body{
+        background-color: blue;
+    }
+    #header{
+        /* height: 70px; */
+        /* width: 100%; */
+        background-color: rgb(212, 221, 228);
+        /* display: flex; */
+        /* justify-content: space-around;    */
+        box-sizing: border-box;
+    }
+
+    #container{
+        margin: 0%;
+        width: 100%;
+        background-color: aquamarine;
+        box-sizing: border-box;                
+        display: flex;
+        flex-direction: column;
+        
+    }
+#media-qr{
+    width: 304px;
+    height: 200px;
+    margin: 10px;
+}
+   
+
+} 
