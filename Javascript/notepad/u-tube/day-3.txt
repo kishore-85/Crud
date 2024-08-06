@@ -1,0 +1,29 @@
+conditional statement:
+
+if(condition){
+true 
+}
+else{
+false
+}
+
+
+//--operators//
+1)logical operators
+2)logical operators
+
+3)logical operators
+
+4)logical operators
+
+5)logical operators
+
+
+= ==> value assign
+== ==> values are same
+=== ==> values check with datatype
+
+
+and 
+or
+not

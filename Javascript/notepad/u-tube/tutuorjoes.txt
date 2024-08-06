@@ -1,0 +1,15 @@
+console types:
+
+console.log('hello wolrd');
+console.error('hello error');
+console.table({fname:'kish',age:25});
+console.warn('hello error');
+console.Clear();
+
+console.timer('timer start');
+
+ for(i=0;i<5;i++){
+   console.log(i)
+}
+
+console.timeEnd('timer end');

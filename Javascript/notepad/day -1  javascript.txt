@@ -1,0 +1,40 @@
+   day -1 // javascript//
+
+1st name for js ==/. Livescript
+
+then due to peak of java livescript renamed as javascript
+
+javascript 2 features => 1) ES5 [ECMASCRIPT]
+                         2) ES6
+
+javascript code will run with the help of js enginee [chrome -v8-jsenginee, firefox-spider monkey]
+
+javascript is used for adding functionalities, interactive.
+
+javascript is not case sensitive.
+
+
+
+DATATYPES: 1) primitive data types.[pre-defined]
+
+                 string, number, boolean, null, undefined.
+
+           2) non-primitive types / reference data type. [user-defined]
+
+              object, array ,functions.
+               
+             object= {a:'kishore',b:24} ==> we can store multiple data-types.
+             
+             array = [1,2,3,4] ==> same data-type only can be stored.
+
+
+
+
+Q/A ==>
+script to where connect?
+
+array and object datatype?
+
+symbol , biginit?
+
+

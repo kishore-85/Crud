@@ -1,0 +1,22 @@
+looping statement;
+
+2types:   for loop
+          do-while loop
+
+*looping means continuously doing the task and it can be break by giving a condition .
+
+*for loop used to access the array values.
+
+for in
+for-of
+for-each ==> it is a function &callback-function
+
+callback functon => in one function giving another fun as input is called call-back
+
+
+
+task1)
+forloop with decrement;
+
+printing the values of array of object;
+
