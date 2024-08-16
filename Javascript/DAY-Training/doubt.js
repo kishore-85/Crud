@@ -129,18 +129,27 @@ let employees = [
 
 ]
 
-for(let i of employees){
-    // console.log(i)
-    // console.log(i.purchase)
-    for(let j of i.purchase){
-        // console.log(j);//---iterating current object
-        //console.log(j.amount)//--iterating obj with keyname
-        // console.log(i.custname+' '+j.status+' '+j.amount)
-        if(j.status==true){
-            console.log(i.custname +' '+j.amount)               ///----------------Estimated output
-        }
-    }
-}
+
+// for(i=0;i<employees.length;i++){
+//     console.log(employees[i].purchase)
+//     for(j=0;j<purchase.length;i++){
+//         console.log('j',j)
+//     }
+// }
+
+
+// for(let i of employees){
+//     // console.log(i)
+//     // console.log(i.purchase)
+//     for(let j of i.purchase){
+//         // console.log(j);//---iterating current object
+//         console.log(j.status)//--iterating obj with keyname
+//         // console.log(i.custname+' '+j.status+' '+j.amount)
+//         // if(j.status==true){
+//         //     console.log(i.custname +' '+j.amount)               ///----------------Estimated output
+//         // }
+//     }
+// }
 
 
 //........................map........................//

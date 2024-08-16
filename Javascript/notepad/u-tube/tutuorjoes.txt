@@ -13,3 +13,14 @@ console.timer('timer start');
 }
 
 console.timeEnd('timer end');
+
+
+2)type-coresion
+      *Adding string and number
+
+3)operators:
+  *arithmetic
+  *Assignment
+  *comparsion
+  *logical
+

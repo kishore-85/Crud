@@ -1,0 +1,40 @@
+length();
+charAt();
+at();
+charCodeAt();
+variable[] --if no char at present returns undefined,but charAt() returns empty string.
+
+a="Apple, Banana, Kiwi";
+
+
+*)slice - slicing the string values a.slice(7,13) == >banana starts from 1st parameter ends with before second parameter.
+
+If you omit the second parameter, the method will slice out the rest of the string:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7);
+
+If a parameter is negative, the position is counted from the end of the string:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+
+
+*)substring() is similar to slice().
+The difference is that start and end values less than 0 are treated as 0 in substring().
+
+
+*)substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.
+
+
+
+
+*)concat
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat("** ",text2);
+
+
+*)Trim.

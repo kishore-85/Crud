@@ -1,4 +1,4 @@
-looping statement;
+Lolooping statement;
 
 2types:   for loop
           do-while loop

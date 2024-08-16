@@ -1,0 +1,10 @@
+Event:
+
+every click,hover, drag , etc all is even
+
+stop propagation
+
+
+event bubbling: bottom to top;
+
+event-capturing: top-to-bottom.

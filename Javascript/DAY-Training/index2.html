@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            border:2px solid red;
+            padding: 5px;
+            margin:2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1>Event Bubbling & capturing</h1>
+    <div class="border" onclick="my_click(event)">
+               
+        <span class="border" onclick="span_click(event)">
+          <button onclick="button_click(event)">press</button>
+        </span>
+        <span class="border"></span>
+    </div> -->
+
+
+    <h1>Event capturing</h1>
+
+    <!-- <div id="div-bubble" class="border">
+        <span id="span-bubble" class="border">
+            event bubble
+        </span>
+    </div> -->
+
+
+    <div id="div_Capture" class="border">
+        <span id="span-capture" class="border">
+            event capture
+        </span>
+    </div>
+
+    <a  href="https://www.w3schools.com/html/html_links.asp " onClick="myclk(event)">press</a>
+    <script src="./eventbubbling.js"></script>
+</body>
+</html>
