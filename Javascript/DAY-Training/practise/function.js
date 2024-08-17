@@ -1,24 +1,24 @@
-// function my_fun(e){
-//     let a =[];
-//     a.push(e)
-// //     console.log(arguments)
-// for(i=0;i<arguments.length;i++){
-//     console.log(arguments[i],'i')           //Default argument array
-// }
+function my_fun(e){
+    let a =[];
+    a.push(e)
+//     console.log(arguments)
+for(i=0;i<arguments.length;i++){
+    console.log(arguments[i],'i')           //Default argument array
+}
 
-// for(i=0;i<a.length;i++){
-//     console.log(a[i],'i')
-// }
-// }
+for(i=0;i<a.length;i++){
+    console.log(a[i],'i')
+}
+}
 
-// let clossure = function(){
-//     let state=0;
+let clossure = function(){
+    let state=0;
 
-//    return ()=>{
-//        state=state+1;                         //closure function syntax;
-//        return state;
-//    }
-// }
+   return ()=>{
+       state=state+1;                         //closure function syntax;
+       return state;
+   }
+}
 
 
 // let a =[10,20,30,40,50];
@@ -31,15 +31,15 @@
 // console.log(a,'aftr')
 
 
-// let a =[10,20,30,40,50];
+let a =[10,20,30,40,50];
 
-// let b = a.map((x)=>{
-//     x=x*x;
-//     return x;                                       //map  ex-1
-// })
+let b = a.map((x)=>{
+    x=x*x;
+    return x;                                       //map  ex-1
+})
 
-// console.log(a,'a-aftr');
-// console.log(b)
+console.log(a,'a-aftr');
+console.log(b)
 
 
 let employes = [{
@@ -73,24 +73,24 @@ let employes = [{
     salary:15000
 }
 ] 
-// let modified_data = employes.map((val)=>{             //map---Ex2
-//     let data= val.fname +' '+val.salary;
-//     return data;
-// })
+let modified_data = employes.map((val)=>{             //map---Ex2
+    let data= val.fname +' '+val.salary;
+    return data;
+})
 
-// console.log(modified_data)
+console.log(modified_data)
 
 
-// let modified_data_2 = employes.map((val,index)=>{
-//     return{
-//         fname:val.fname,                                //map_Ex-3[updated data]
-//         age:val.age,
-//         gender:val.gender,
-//         salary:val.salary+2000
-//     }
-// })
+let modified_data_2 = employes.map((val,index)=>{
+    return{
+        fname:val.fname,                                //map_Ex-3[updated data]
+        age:val.age,
+        gender:val.gender,
+        salary:val.salary+2000
+    }
+})
 
-// console.log(modified_data_2)
+console.log(modified_data_2)
 
 //-----------Filter------------//
 let name_data="priya";
@@ -136,28 +136,34 @@ console.log(data_sum_count,'reduce')
 
 //Sorting
 
-// let arr_sort = employes.sort((a,b)=>{                                //Sorting an array based on employees age
-//    return a.age-b.age;
-// })
-// console.table(arr_sort)
+let arr_sort = employes.sort((a,b)=>{                                //Sorting an array based on employees age
+   return a.age-b.age;
+})
+console.table(arr_sort)
 
 
-//splice [It modifies the original array & also return new array]
+// splice [It modifies the original array & also return new array]
 
-// let arr_splice = employes.splice(1);
-//        console.log(employes,'orginal_array');
-//        console.log(arr_splice,'new array')
+let arr_splice = employes.splice(1);
+       console.log(employes,'orginal_array');                        //splice Ex-1
+       console.log(arr_splice,'new array')
 
-// let arr_splice2 =employes.splice(2,1)
-//           console.log(employes,'orginal_array');
-//           console.log(arr_splice2,'new array')
+let arr_splice2 =employes.splice(2,1)
+          console.log(employes,'orginal_array');                     //splice Ex-2
+          console.log(arr_splice2,'new array')
 
-// let arr_splice3 = employes.splice(2,1,{fname:'karthik',age:40})
-//         console.log(employes,'orginal_array');
-//         console.log(arr_splice3,'new array')
+let arr_splice3 = employes.splice(2,1,{fname:'karthik',age:40})
+        console.log(employes,'orginal_array');                       //splice Ex-3
+        console.log(arr_splice3,'new array')
 
-//Slice [It will not impact the original array]
+// Slice [It will not impact the original array]
+
+
 
 let arr_slice= employes.slice(1)
-          console.log(employes,'orginal_array');
+          console.log(employes,'orginal_array');                    //slice ex1
           console.log(arr_slice,'new array')
+
+let arr_slice2 =employes.slice(2,5)
+          console.log(employes,'orginal_array');
+          console.log(arr_slice2,'new array')                          //slice ex1
