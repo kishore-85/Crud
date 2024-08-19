@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #form_container{
+            width: 500px;
+            height: 50vh;
+            background-color: rgb(187, 185, 181);
+            margin-left: 30%;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        #forms{
+            position: absolute;
+            margin: 25px 0px 0px 35px;
+        }
+        .forms_div{
+            
+            margin:15px 0px 0px 25px
+        }
+        .input{
+            margin-top: 10px;
+            width: 240px;
+            padding: 10px 40px;
+            border-radius: 10px;
+            border: none;
+        }
+        #contact{
+            margin-top: 25px;
+        }
+        #btn{
+            margin: 20px 0px 0px 150px;
+        }
+        #submit{
+            padding: 10px 35px;
+            border-radius: 8px;
+            border: 1px solid rgb(148, 148, 225);
+        }
+        #submit:hover{
+            background-color: rgb(31, 101, 192);
+            border: 1px solid  rgb(138, 141, 144);
+            color: brown;
+        }
+        .label{
+            font-weight: bold;
+        }
+        .label:hover{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Forms page</h3>
+    <div id="form_container">
+        <form id="forms" onsubmit="my_Submit()">
+            <div class="forms_div">
+                <label class="label">Full_Name:</label><br>
+                <input type="text" id="fname" class="input" name="fname"><br><br>
+            </div>
+           <div class="forms_div">
+                <label class="label">Email:</label><br>
+                <input type="text" id="email_id"  class="input" name="email_id"><br>
+           </div>
+
+           <div class="forms_div" id="contact">
+                <label class="label">Contact_No</label><br>
+                <input type="number" id="no"  class="input" name="no"><br>
+           </div>
+    
+           <div  id="btn">
+                <button type="submit" id="submit" >Submit</button>
+           </div>
+            
+           
+        </form>
+    </div>
+   
+    <script src="./form.js"></script>
+</body>
+</html>

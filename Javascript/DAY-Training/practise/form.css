@@ -1,0 +1,85 @@
+
+body{
+    margin: 0px;
+}
+#form_container{
+    width: 500px;
+    height: 70vh;
+    background-color: rgb(187, 185, 181);
+    margin-left: 31%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#forms{
+    position: absolute;
+    margin: 25px 0px 0px 35px;
+}
+.forms_div{
+    
+    margin:15px 0px 0px 25px
+}
+.input{
+    margin-top: 10px;
+    width: 240px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+}
+#contact{
+    margin-top: 25px;
+}
+#btn{
+    margin: 20px 0px 0px 150px;
+}
+#submit{
+    padding: 10px 35px;
+    border-radius: 8px;
+    border: 1px solid rgb(148, 148, 225);
+}
+#submit:hover{
+    background-color: rgb(31, 101, 192);
+    border: 1px solid  rgb(138, 141, 144);
+    color: brown;
+}
+.label{
+    font-weight: bold;
+}
+.label:hover{
+    color: brown;
+}
+.type_box{
+   
+   
+}
+#select_div{
+    margin-top: 24px;
+}
+
+#select{
+    margin-top: 15px;
+    width: 320px;
+    padding: 10px 5px;
+    border-radius: 7px;
+}
+#email_chck{
+    margin-left: 25px;
+}
+input[type="checkbox"]{
+   
+   
+    width: 20px; /*Desired width*/
+    height: 20px; 
+    margin-left: 10px;
+    /*Desired height*/
+  }
+
+  #check_box{
+      display: flex;
+      margin-top: 20px;
+  }
+
+  #lbl{
+      position:relative;
+      margin-top: 10px;
+  }

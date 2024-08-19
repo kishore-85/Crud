@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="form_container">
+        <form id="forms" onsubmit="to_submit(event)">
+            <div class="forms_div">                                                          <!--Fname-->
+                <label class="label">Full_Name:</label><br>
+                <input type="text" id="fname" class="input" name="fname" onchange="handle_change(event)"><br><br>
+            </div>
+           <div class="forms_div">                                                           <!--Email-->
+                <label class="label">Email:</label><br>
+                <input type="text" id="email_id"  class="input" name="email_id" onchange="handle_change(event)"><br>
+           </div>
+
+           <div class="forms_div" id="contact">
+                <label class="label">Contact_No</label><br>                                  <!--Contact_NO-->
+                <input type="number" id="no"  class="input" name="no" onchange="handle_change(event)"><br>
+           </div>
+
+           <div class="forms_div">                                                            <!--Gender- Radio button-->
+               <label  class="label">Gender</label>
+               <input type="radio" class="type_box" name="Gender" value="male">
+               <input type="radio" class="type_box" name="Gender" value="female">
+           </div>
+
+           <div class="forms_div" id="check_box">                                             <!--Check_box-->
+                  <label  class="label">Phone:</label>
+                  <div>
+                    <input type="checkbox" class="type_box" name="contact_type1" value="phone">
+                  </div>
+                  
+                  <label  class="label" id="email_chck">Email:</label>
+                  <div>
+                    <input type="checkbox" class="type_box" name="contact_type2" value="email">
+                  </div>
+                  
+           </div>
+
+           <div class="forms_div" id="select_div">
+               <label id="lbl" class="label">Course:</label><br>                              <!--Select-->
+               <select id="select">
+                   <option>Computer science</option>
+                   <option>Electronis and communication</option>
+                   <option>Information Tech</option>
+               </select>
+           </div>
+    
+           <div  id="btn">
+                <button type="submit" id="submit" >Submit</button>
+           </div>
+            
+           
+        </form>
+    </div>
+
+    <script src="./form.js"></script>
+</body>
+</html>
