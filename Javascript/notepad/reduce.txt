@@ -1,0 +1,3 @@
+let reduce_arr =arr.reduce((accumalator,currentval)=>{
+    return val
+},initial value)

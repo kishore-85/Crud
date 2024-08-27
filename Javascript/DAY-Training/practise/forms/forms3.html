@@ -9,19 +9,22 @@
 </head>
 <body>
     <div id="form_container">
-        <form id="forms" onsubmit="to_submit(event)">
+
+        <form id="forms">
+
             <div class="forms_div">                                                          <!--Fname-->
                 <label class="label">Full_Name:</label><br>
-                <input type="text" id="fname" class="input" name="fname" onchange="handle_change(event)"><br><br>
+                <input type="text" id="fname" class="input" name="fname"><br><br>
             </div>
+
            <div class="forms_div">                                                           <!--Email-->
                 <label class="label">Email:</label><br>
-                <input type="text" id="email_id"  class="input" name="email_id" onchange="handle_change(event)"><br>
+                <input type="text" id="email_id"  class="input" name="email_id" ><br>
            </div>
 
            <div class="forms_div" id="contact">
                 <label class="label">Contact_No</label><br>                                  <!--Contact_NO-->
-                <input type="number" id="no"  class="input" name="no" onchange="handle_change(event)"><br>
+                <input type="number" id="no"  class="input" name="no"><br>
            </div>
 
            <div class="forms_div">                                                            <!--Gender- Radio button-->
@@ -60,6 +63,6 @@
         </form>
     </div>
 
-    <script src="./form.js"></script>
+    <script src="./forms3.js"></script>
 </body>
 </html>

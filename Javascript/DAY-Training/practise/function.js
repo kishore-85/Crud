@@ -93,6 +93,7 @@ let employes = [{
 // console.log(modified_data_2)
 
 //-----------Filter------------//
+
 // let name_data="priya";
 // let filter_data = employes.filter((value,index)=>{
 // return value.fname.includes(name_data)                         //Filter_ex-1 [finding by name]
