@@ -36,7 +36,7 @@ let a = document.getElementById('rock')
 
 let get=[]
 
-fetch('https://api.spacexdata.com/v3/launches')
+fetch('https://api.spacexdata.com/v3/launches')                 //step--3
 .then(res=>res.json().then(resp=>{
     console.log('resp',resp) 
 
@@ -46,7 +46,7 @@ fetch('https://api.spacexdata.com/v3/launches')
         //     launch_date_unix}`
         get.push(i.details) 
   }
-                                                                                          //step--3
+                                                                                          
 })).catch(err=>{
     console.log('err',err)
 })

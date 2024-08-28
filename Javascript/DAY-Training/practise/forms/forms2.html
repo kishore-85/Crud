@@ -26,29 +26,29 @@
 
            <div class="forms_div">                                                            <!--Gender- Radio button-->
                <label  class="label">Gender</label>
-               <input type="radio" class="type_box" name="Gender" value="male">
-               <input type="radio" class="type_box" name="Gender" value="female">
+               <input type="radio" class="type_box" name="Gender" value="male" onchange="handle_change(event)">
+               <input type="radio" class="type_box" name="Gender" value="female" onchange="handle_change(event)">
            </div>
 
            <div class="forms_div" id="check_box">                                             <!--Check_box-->
                   <label  class="label">Phone:</label>
                   <div>
-                    <input type="checkbox" class="type_box" name="contact_type1" value="phone">
+                    <input type="checkbox" class="type_box" name="contact_type" value="phone" onchange="handle_change(event)">
                   </div>
                   
                   <label  class="label" id="email_chck">Email:</label>
                   <div>
-                    <input type="checkbox" class="type_box" name="contact_type2" value="email">
+                    <input type="checkbox" class="type_box" name="contact_type" value="email" onchange="handle_change(event)">
                   </div>
                   
            </div>
 
            <div class="forms_div" id="select_div">
                <label id="lbl" class="label">Course:</label><br>                              <!--Select-->
-               <select id="select">
-                   <option>Computer science</option>
-                   <option>Electronis and communication</option>
-                   <option>Information Tech</option>
+               <select id="select" name="dept" onchange="handle_change(event)">
+                   <option value="CSE" onchange="handle_change(event)">Computer science</option>
+                   <option value="ECE" onchange="handle_change(event)">Electronis and communication</option>
+                   <option value="IT" onchange="handle_change(event)">Information Tech</option>
                </select>
            </div>
     

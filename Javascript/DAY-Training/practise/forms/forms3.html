@@ -27,36 +27,36 @@
                 <input type="number" id="no"  class="input" name="no"><br>
            </div>
 
-           <div class="forms_div">                                                            <!--Gender- Radio button-->
+           <div class="forms_div" id="radio">                                                            <!--Gender- Radio button-->
                <label  class="label">Gender</label>
-               <input type="radio" class="type_box" name="Gender" value="male">
-               <input type="radio" class="type_box" name="Gender" value="female">
+               <input type="radio" class="type_box" id="Gender1" name="Gender" value="male">
+               <input type="radio" class="type_box" id="Gender2" name="Gender" value="female">
            </div>
 
            <div class="forms_div" id="check_box">                                             <!--Check_box-->
                   <label  class="label">Phone:</label>
                   <div>
-                    <input type="checkbox" class="type_box" name="contact_type1" value="phone">
+                    <input type="checkbox" class="type_box" name="contact_type" id="phone_chck" value="phone">
                   </div>
                   
                   <label  class="label" id="email_chck">Email:</label>
                   <div>
-                    <input type="checkbox" class="type_box" name="contact_type2" value="email">
+                    <input type="checkbox" class="type_box" name="contact_type" id="email_chck"  value="email">
                   </div>
                   
            </div>
 
            <div class="forms_div" id="select_div">
                <label id="lbl" class="label">Course:</label><br>                              <!--Select-->
-               <select id="select">
-                   <option>Computer science</option>
-                   <option>Electronis and communication</option>
-                   <option>Information Tech</option>
+               <select id="select" name="dept">
+                   <option value="CSE">Computer science</option>
+                   <option value="ECE">Electronis and communication</option>
+                   <option value="IT">Information Tech</option>
                </select>
            </div>
     
            <div  id="btn">
-                <button type="submit" id="submit" >Submit</button>
+                <button type="submit" >Submit</button>
            </div>
             
            
