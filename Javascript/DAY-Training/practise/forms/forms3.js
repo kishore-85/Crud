@@ -21,38 +21,29 @@ let forms =document.getElementById('forms')
 
 forms.addEventListener('submit',(e,)=>{
   
-    e.preventDefault();
-    let genderr;      
+    e.preventDefault();         
     let obj={};
+    let genderr;
+    let check_box = [];
     obj.fname= document.getElementById('fname').value;
-    obj.email= document.getElementById('email_id').value;
-    obj.gender= genderr;
+    obj.email= document.getElementById('email_id').value;   
+    obj.contact_type = check_box;
 
     //radio-btn
-    let radio=document.getElementById('radio').value    
-    // console.log(document.querySelector('#Gender1').value)
-    // console.log(document.getElementById('Gender1').value)
-//     if(document.getElementById('Gender1').checked){
-//         //  genderr= document.getElementById('Gender1').value;
-//          console.log(document.querySelector('#Gender1').value)
-//     }
-//    else if(document.getElementById('Gender2').checked){
-//         genderr= document.getElementById('Gender2').value;
-//    }
-    
-    // obj.contact_type= document.querySelector('.checkbox').checked;
+   document.getElementsByName('Gender').forEach(item=>{
+    if(item.checked === true){
+       obj.gender=item.value
+    }
+   })
 
-    //check-box;
 
-    if(document.getElementById('phone_chck').checked){
-                
-                 console.log(document.querySelector('phone_chck').value)
-            }
-           else{
-                // genderr= document.getElementById('Gender2').value;
-                console.log('else')
-           }
-
+    //check-box:
+      document.querySelectorAll('[type="checkbox"]').forEach(item => {
+          if(item.checked === true){
+              check_box.push(item.value)
+              console.log(item.value,'check-box val')
+          }
+      })
 
     //select
 
@@ -60,10 +51,12 @@ forms.addEventListener('submit',(e,)=>{
    
     
     console.log('submit',obj)
-     vali(obj)
+    post(obj)
+    //  vali(obj)
      
 })
-
+//fetch('https://api.spacexdata.com/v3/launches')
+//https://jsonplaceholder.typicode.com/comments
 
 function post(obj){
     fetch('https://jsonplaceholder.typicode.com/comments',{
@@ -76,4 +69,16 @@ function post(obj){
     .then(res=>{res.json()})
     .then(resp=>{console.log(resp)})
     .catch(err=>{console.log(err)})
+}
+
+
+function get_data(){
+    fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(res=>res.json())
+    .then(resp=>{
+        console.log(resp)
+    })
+    .catch(err=>{
+        console.log(err)
+    })
 }

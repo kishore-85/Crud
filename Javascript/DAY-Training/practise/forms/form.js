@@ -1,4 +1,4 @@
- 
+let contact =[]
  let form_val ={
     method1:function(e){
      
@@ -12,7 +12,7 @@
 
 let handle_change= function(e){
     
-   
+  
   if(e.target.name== "fname"){
       {form_val.fname= e.target.value}
       
@@ -28,10 +28,27 @@ let handle_change= function(e){
       form_val.gender = e.target.value
     }
 else if(e.target.name=="contact_type"){
-        form_val.contact = e.target.value
+        // form_val.contact = e.target.value
+        if(e.target.checked == true){
+            console.log('true contact',e.target.value)
+            contact.push(e.target.value)
+        }
+        else{
+            console.log('else contact',e.target.value)
+            let index = contact.indexOf(e.target.value)
+            if(contact.length>0){
+                 contact.splice(index,1)
+            }
+        //    console.log(c)
+
+        }
+        
+        form_val.contact = contact;
+        console.log(contact)
       }
 else if(e.target.name=="dept"){
         form_val.dept = e.target.value
+
       }  
   
 //   console.log(form_val)  
