@@ -12,8 +12,8 @@ let obj={
 let arr=[1,2,3,4,5]
 
 // const [a,b,c,d,e]=arr;     //type-1
-//  const[f,,g]=arr               //type-2
-const [a,b,c,...f]=arr     //type3
+//  const[f,,g]=arr           //type-2
+const [a,b,c,...f]=arr       //type3
 
 console.log(a)
 console.log(b)
@@ -63,8 +63,8 @@ let emp={
     }
 }
 
-let {sal:salary}=emp //1st level
-let {address:{ph:phonenumber}}=emp
+let {sal:salary}=emp                          //1st level
+let {address:{ph:phonenumber}}=emp            //2nd level
 
 let {address:{pin:{code}}}=emp
 

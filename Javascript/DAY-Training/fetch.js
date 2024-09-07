@@ -1,4 +1,4 @@
-// asynchronous javascript xml
+//AJAX- asynchronous javascript xml
 
 //sync => after completing 1st task and then only it will go to next;
 
