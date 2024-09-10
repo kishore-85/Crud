@@ -158,7 +158,7 @@ console.log('c',c)                                     // to overcome nested we 
 let e = JSON.parse(JSON.stringify(employee_Arr))
 
 let f= e.map((x)=>{
-    return x.salary= x.salary+1500;                    //ex-1      [original array value changing - due to 2nd level]
+    return x.salary= x.salary+1500;                    //ex-3  [nested array does't impact the original array]
 })
 
 

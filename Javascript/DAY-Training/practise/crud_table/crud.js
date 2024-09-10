@@ -23,18 +23,19 @@ function add(e){
 }
 
 function create(){
-  
+     remove_dom()
    // let create_data = [];
    // create_data =  JSON.parse(JSON.stringify(e)) ;
       data_arr.forEach((x) => {
 
          let tr= document.createElement('tr');
+         tr.setAttribute('id','list_tr')
          tr.innerHTML = 
             `<td><input type='text' id="td_fname" class="inp_type" value="${x.fname}" disabled ></td>
              <td><input type='text' id="td_email" class="inp_type" value="${x.email}" disabled ></td>
-             <td><button class="btn" onclick="edit('${x.fname}')">Edit</button></td>
-             <td><button class="btn" onclick="save()">save</button></td>
-             <td><button class="btn" onclick="Delete('${x.fname}')">Delete</button></td>`
+             <td><button class="btn" id="btn_edit" onclick="edit('${x.fname}')">Edit</button></td>
+             <td><button class="btn" id="btn_save" onclick="save()">save</button></td>
+             <td><button class="btn" id="btn_Delete" onclick="Delete('${x.fname}')">Delete</button></td>`
          body.appendChild(tr)
    });
   
@@ -64,6 +65,7 @@ function savee(){
    return val;
 });
   console.log('data array',data_arr)  ;
+  remove_dom();
   create();
 }
 
@@ -75,6 +77,15 @@ function Delete(e){
 
   let index =  delete_fname_arr.indexOf(e)
   data_arr.splice(index,1)
- 
+  remove_dom()
   create();
+}
+
+function remove_dom(){
+   document.querySelectorAll('tr').forEach((element)=>{
+      console.log('element',element)
+      if(element.id=="list_tr"){
+         element.remove();
+      }     
+   })
 }
