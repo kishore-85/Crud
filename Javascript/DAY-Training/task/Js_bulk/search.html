@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handle_submit(event)">
+       <select name="type_search" onchange="handle_change(event)">
+           <option value="google">Google</option>
+           <option value="bing">bing</option>
+       </select>
+
+       <input type="text" name="input_val" onchange="handle_change(event)">
+     
+    </form>
+    <button onclick="submit()">submit</button>
+
+    <div id="div">
+
+    </div>
+    <script src="./search.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine with Iframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #search-container {
+            margin-bottom: 20px;
+        }
+        #search-input {
+            padding: 10px;
+            width: 300px;
+        }
+        #search-button {
+            padding: 10px;
+        }
+        #search-results {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Enter search query">
+        <button id="search-button">Search</button>
+    </div>
+
+    <iframe id="search-results"></iframe>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            var query = document.getElementById('search-input').value;
+            var iframe = document.getElementById('search-results');
+
+            if (query.trim() !== '') {
+                var searchURL = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+                iframe.src = searchURL;
+            } else {
+                alert('Please enter a search query.');
+            }
+        });
+    </script>
+
+</body>
+</html> -->

@@ -46,8 +46,8 @@ function edit(e){
    user = e;
    document.getElementById('btn').style.display="none";
    document.getElementById('btn_save').style.display="block"; 
- 
- 
+   // rowEdit_enable() 
+   row_edit()
 }
 
 
@@ -87,5 +87,16 @@ function remove_dom(){
       if(element.id=="list_tr"){
          element.remove();
       }     
+   })
+}
+
+// function rowEdit_enable(){
+//    console.log(user,'user')
+// }
+function row_edit(){
+   document.querySelectorAll('tr').forEach((element)=>{
+     element.addEventListener('click',(x)=>{
+      x.setAttribute('disabled',false)
+     })
    })
 }
