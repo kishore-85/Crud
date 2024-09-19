@@ -4,7 +4,7 @@
 //     return 1;
 // }
 
-// console.log(myfun(),'myfun')
+// console.log(myfun(),'myfun1')
 
 
 // async function myfun2(){
@@ -18,13 +18,13 @@
 async function myFun(){
     return new Promise((resolve,reject)=>{
         setTimeout(() => {
-            resolve(1);
+            // resolve(1,'promise success');
             reject('failure')
-        }, 2000);
+        }, 3000);
     })
 }
 
-console.log(myFun())
+// console.log(myFun())                      //to acheive api call we use await or then method
 
 // async function await_ex(){
 //     const output = await myFun();
@@ -32,17 +32,19 @@ console.log(myFun())
 // }
 
 // async function awaitfun2(){
-//     myFun.then(console.log)
+//     myFun().then(console.log)
+//     .catch(console.error)
 // }
+// await_ex()
+// awaitfun2()
 
-
-async function increment(res){
-    return new Promise ((resolve)=>{
-        setTimeout(() => {
-            resolve(res+1)
-        }, 2000);
-    })
-}
+// async function increment(res){
+//     return new Promise ((resolve)=>{
+//         setTimeout(() => {
+//             resolve(res+1)
+//         }, 2000);
+//     })
+// }
 
 // async function awaitfun(){
 //       myFun().then(res=>increment(res))
@@ -55,21 +57,22 @@ async function increment(res){
 
 // awaitfun()
 
-async function awaitfun(){
-try{
-    const v1= await myFun()
+// async function awaitfun(){
+// try{
+//     const v1= await myFun()
 
-    const v2 = await increment(v1)
+//     const v2 = await increment(v1)
 
-    const v3 = await increment(v2)
+//     const v3 = await increment(v2)
 
-    const v4 = await increment(v3)
+//     const v4 = await increment(v3)
 
-    console.log(v4,'v4')
-}
-   catch(error){
-       console.log('error',error)
-   } 
-} 
+//     console.log(v4,'v4')
+// }
+//    catch(error){
+//        console.log('error',error)
+//    } 
+// } 
 
-awaitfun()
+// awaitfun();
+

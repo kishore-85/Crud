@@ -22,21 +22,23 @@
 // p2(2).then(x=>x+20).then(y=>y+30).then(console.log)
 
 //3promise 
-//   let p3= new Promise((resolve,reject)=>{
-//       setTimeout(() => {
-//           reject(' p3')
-//       }, 1000);
-//   })
+  let p3= new Promise((resolve,reject)=>{
+      setTimeout(() => {
+          resolve('suceess p3')
+          reject('reject p3')
+      }, 1000);
+  })
 
 
-//   let p4= new Promise((resolve,reject)=>{
-//     setTimeout(() => {
-//         reject(' p4')
-//     }, 1500);
-// })
-// Promise.all([p3,p4]).then(console.log).catch(console.log)
+  let p4= new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        // resolve('suceess p4')
+        reject(' p4')
+    }, 1500);
+})
+// Promise.all([p3,p4]).then(console.log).catch(console.error)
 // Promise.allSettled([p3,p4]).then(console.log).catch(console.log)
-// Promise.race([p3,p4]).then(console.log).catch(console.log)
+Promise.race([p3,p4]).then(console.log).catch(console.log)
 
 
 
