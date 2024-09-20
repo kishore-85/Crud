@@ -19,30 +19,30 @@ function create(e){
         console.log('iron create')
         li.innerHTML = `<img src="./iron.webp" width="120px" height="100px" class="li_row_img">
         <input type="checkbox" class="li_row postion_cls_checkbox" onclick="count_ironbox(event)">
-        <input type="text" id="sec" class="li_row postion_cls_sec">
-        <input type="text" id="unit" class="li_row postion_cls_rate">
+        <input type="text" id="sec" class="li_row postion_cls_sec li_rw_pa">
+        <input type="text" id="unit" class="li_row postion_cls_rate li_rw_pa">
         `
     }
     else if(e=='light'){
         console.log(' create light')
         li.innerHTML = `<img src="./light.webp " width="120px" height="100px">
         <input type="checkbox" class="li_row postion_cls_checkbox" onclick="count_light(event)">
-        <input type="text" id="light_sec" class="li_row postion_cls_sec">
-        <input type="text" id="light_unit" class="li_row postion_cls_rate">`
+        <input type="text" id="light_sec" class="li_row postion_cls_sec li_rw_pa">
+        <input type="text" id="light_unit" class="li_row postion_cls_rate li_rw_pa">`
     } 
     else if(e=='AC'){
         console.log(' create  AC')
         li.innerHTML = `<img src="./Ac.webp" width="120px" height="100px" class="li_row">
         <input type="checkbox" class="li_row postion_cls_checkbox" onclick="count_AC(event)">
-        <input type="text" id="ac_sec" class="li_row postion_cls_sec">
-        <input type="text" id="ac_unit" class="li_row postion_cls_rate">`
+        <input type="text" id="ac_sec" class="li_row postion_cls_sec li_rw_pa">
+        <input type="text" id="ac_unit" class="li_row postion_cls_rate li_rw_pa">`
     }  
     else if(e=='washing_machine'){
         console.log('create washing_machine')
         li.innerHTML = `<img src="./washingmachine.webp" width="120px" height="100px" class="li_row">
         <input type="checkbox" class="li_row postion_cls_checkbox" onclick="count_washing(event)">
-        <input type="text" id="washing_sec" class="li_row postion_cls_sec">
-        <input type="text" id="washing_unit" class="li_row postion_cls_rate">`
+        <input type="text" id="washing_sec" class="li_row postion_cls_sec li_rw_pa">
+        <input type="text" id="washing_unit" class="li_row postion_cls_rate li_rw_pa">`
     }  
     ul.appendChild(li)
 
@@ -171,13 +171,23 @@ function unit_washing(e){
 
 function total_unit(){
     sum_unit = washing_unit+unitval+ac_unit+light_unit;
-    document.getElementById('total_unit').innerText = `${sum_unit}`
+    document.getElementById('total_unit').innerText = `Total Unit: ${sum_unit}`
     price()
 }
 
 function price(){
    if(sum_unit%5==0){
        sum_price++;
-    document.getElementById('total_price').innerText = `${sum_price}`
+    document.getElementById('total_price').innerText = `$price: ${sum_price}`
    }
+}
+
+function my_toogle(e){
+    console.log('tggle',e.target.checked)
+    if(e.target.checked == true){
+        document.getElementById('body').style.backgroundColor = `darkseagreen`
+    }
+    else{
+        document.getElementById('body').style.backgroundColor = `white`
+    }
 }

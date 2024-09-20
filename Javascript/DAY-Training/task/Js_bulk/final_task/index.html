@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body id="body">
     <div class="container">
         <div class="div1">
             <img src="./iron.webp" class="img" onclick="create('iron')">
@@ -27,8 +27,13 @@
             <div id="total_price">
                 
             </div>
+            <div class="toogle_div" onclick="my_toogle(event)">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="button"></label>
+         </div>
         </div>
     </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>
