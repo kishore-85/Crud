@@ -56,34 +56,34 @@ myfun()
                                                    //Acess the parent function and variables
 
 
-// class vehicle{
-//     constructor(brand,year,model){
-//         this.brand =brand;
-//         this.year =year;
-//         this.model=model;
-//     }
-// }
+class vehicle{
+    constructor(brand,year,model){
+        this.brand =brand;
+        this.year =year;
+        this.model=model;
+    }
+}
 
-// class Car extends vehicle{
-//     constructor(brand,year,model,wheels){
-//         super(brand,year,model);
-//         this.wheels =wheels
-//     }
-// }
-
-
-// class bike extends vehicle{
-//     constructor(brand,year,model,wheels){
-//         super(brand,year,model);
-//         this.wheels =wheels;
-//     }
-// }
+class Car extends vehicle{
+    constructor(brand,year,model,wheels){
+        super(brand,year,model);
+        this.wheels =wheels
+    }
+}
 
 
-// const car1 = new car('bmw',2020,'benz',4)
-// console.log(car1,'car1')
+class bike extends vehicle{
+    constructor(brand,year,model,wheels){
+        super(brand,year,model);
+        this.wheels =wheels;
+    }
+}
 
-// const bike1 = new bike('honda',2026)
-// console.log(bike1,'car1')
+
+const car1 = new Car('bmw',2020,'benz',4)
+console.log(car1,'car1')
+
+const bike1 = new bike('honda',2026)
+console.log(bike1,'car1')
 
 
