@@ -13,7 +13,7 @@ import Login from "./Components/Conditional_rendering_login/Login";
 import Home from "./Components/Conditional_rendering_login/Home";
 import Timer from "./Components/Conditional_rendering_login/Timer/Timer";
 import Formsstate from "./Components/practise/Formsate";
-import Todolist from "./Components/practise/Todolist";
+import Todolist from "./Components/practise/Todo/Todolist";
 function App() {
   // let [isLoggedin, setIsLoggedin] = useState(false);
   // let [value, setValue] = useState('');

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import "./Todo.css";
-
+import Li from "./branch_comp/Li";
 function Todolist(){
    
    const[ipval , setipval] = useState('');
@@ -26,8 +26,8 @@ function Todolist(){
 
     function handledelete(e){
        
-       console.log(parseInt(e))    
-       
+         
+       console.log('delete works')
         console.log('bfr splice',user_val)
         let indx = user_val.indexOf(e)
         user_val.splice(indx,1)
@@ -50,18 +50,7 @@ function Todolist(){
                </form>
               
            </div>
-          <div id="container_2">
-              <ul>
-                    {
-                        user_val.map((val,index)=>{
-                          return  <li key={index} className="li">
-                              {val} <button className="delete" onClick={()=>{handledelete(val)}}>Delete </button>
-                          </li>
-                        })
-                    }
-              </ul>
-
-          </div>
+         <Li arrval={user_val} onClickFunction={handledelete}></Li>
         </>
     )
 }
