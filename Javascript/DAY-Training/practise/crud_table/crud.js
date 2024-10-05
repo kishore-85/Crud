@@ -18,7 +18,7 @@ function add(e){
    obj.fname = document.getElementById('fname').value;
    obj.email= document.getElementById('email').value;
    data_arr.push(obj)
-   console.log(data_arr)
+   // console.log(data_arr)
    create(data_arr)
 }
 
@@ -31,9 +31,9 @@ function create(){
          let tr= document.createElement('tr');
          tr.setAttribute('id','list_tr')
          tr.innerHTML = 
-            `<td><input type='text' id="td_fname" class="inp_type" value="${x.fname}" disabled ></td>
+            `<td><input type='text' id="td_fname" class="inp_type" name="fname" value="${x.fname}" disabled ></td>
              <td><input type='text' id="td_email" class="inp_type" value="${x.email}" disabled ></td>
-             <td><button class="btn" id="btn_edit" onclick="edit('${x.fname}')">Edit</button></td>
+             <td><button class="btn" id="btn_edit" onclick="edit('${x.fname}', row_edit())">Edit</button></td>
              <td><button class="btn" id="btn_save" onclick="save()">save</button></td>
              <td><button class="btn" id="btn_Delete" onclick="Delete('${x.fname}')">Delete</button></td>`
          body.appendChild(tr)
@@ -53,8 +53,7 @@ function edit(e){
 
 function savee(){   
 
-   document.getElementById('btn').style.display="block";
-   // document.getElementById('td_fname').setAttribute('disabled')
+   document.getElementById('btn').style.display="block";  
    document.getElementById('btn_save').style.display="none";
 
    data_arr.forEach((val) => {
@@ -64,7 +63,7 @@ function savee(){
      }
    return val;
 });
-  console.log('data array',data_arr)  ;
+//   console.log('data array',data_arr)  ;
   remove_dom();
   create();
 }
@@ -83,20 +82,43 @@ function Delete(e){
 
 function remove_dom(){
    document.querySelectorAll('tr').forEach((element)=>{
-      console.log('element',element)
+      // console.log('element',element)
       if(element.id=="list_tr"){
          element.remove();
       }     
    })
 }
 
-// function rowEdit_enable(){
-//    console.log(user,'user')
-// }
+
 function row_edit(){
-   document.querySelectorAll('tr').forEach((element)=>{
-     element.addEventListener('click',(x)=>{
-      x.setAttribute('disabled',false)
-     })
+   // document.querySelectorAll('tr').forEach((element)=>{
+   //    console.log('index',element.innerHTML.includes(user))
+      
+              
+   //    if(element.innerHTML.includes(user)){
+   //       console.log(element.innerHTML)
+   //       console.log(element.i,'inputmode')
+   //       // element.setAttribute('disabled',true)
+        
+   //    }
+     
+      
+
+   //    document.querySelectorAll('[type="text"]').forEach((element)=>{
+   //            console.log
+   //    })
+   // })
+
+   document.getElementsByName('fname').forEach((element)=>{
+      if(element.value == user){
+               console.log(element.value,'in')
+               console.log(element)
+            //   element.setAttribute('disabled',false)
+            element.removeAttribute('disabled')
+            }
+      // console.log(element)
+         //  console.log(element.value,'val')
+         //  console.log(user,'user')
    })
 }
+

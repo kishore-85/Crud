@@ -1,4 +1,4 @@
-let data=['kowsik','praveen','kavin pradeep','kulops','naveena','ram moorthy','jeevan sanjay','mano shri','kiruba sri']
+let data=['kowsik','naveen','kavin pradeep','kulops','naveena','ram moorthy','jeevan sanjay','mano shri','kiruba sri']
 
 
 let ul=document.getElementById('ul')
