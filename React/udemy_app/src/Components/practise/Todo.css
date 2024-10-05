@@ -1,0 +1,61 @@
+h1{
+    text-align: center;
+}
+
+
+#container_1{
+    width: 450px;
+    height: 33vh;
+    background-color: burlywood;
+    margin-left: 35%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#form{
+    position: relative;
+    left: 100px;
+    top:60px
+}
+
+#ip1{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 3px 10px;
+    box-sizing: border-box;
+}
+#submit{
+    margin-left: 45px;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 5px 15px;
+}
+
+#submit:hover{
+    background-color: rgb(234, 235, 236);
+}
+
+#lbl{
+    color:blueviolet
+}
+
+.li{
+    background-color: gray;
+    margin: 10px 25%;
+    list-style-type: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+.delete{
+    float: right;
+    border-radius: 12px;
+    background-color: brown;
+    padding: 5px 10px;
+    border-style: none;
+    
+}
+
+.delete:hover{
+    background-color: red;
+}

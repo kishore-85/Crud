@@ -1,0 +1,8 @@
+.div{
+  width: 280px;
+  height: 180px;
+  background-color: aliceblue;
+  padding: 10px 0px 0px 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
