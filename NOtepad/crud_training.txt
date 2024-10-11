@@ -1,0 +1,29 @@
+
+
+props -- is read only and cannot modify directly.
+
+state  --  local state management [React purely depend on state].
+
+state is used to update the value in DOM.
+
+rce or rcc -class componenent.
+
+rfce or rfe - functional component. 
+
+class method --- under the render only we can write the return.[statefull component].
+                 Lifecycle methods available in class.
+                  Default values
+                 super()
+                 
+
+Jsx method   ----directly under the function we can write the return.[Stateless component].
+                 Lifecycle methods not-available in class.
+                 So, we use hooks methods.
+
+
+
+Form: controlled and uncontrolled form.
+
+
+
+value==\\??

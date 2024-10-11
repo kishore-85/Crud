@@ -1,0 +1,40 @@
+React js - is an javascript libraries.
+
+For an each action DOM is re-constructed in other frameworks , so react js was developed
+
+
+React features:
+
+1. Virtual Dom
+2. Jsx
+3. Component's Based architecture.
+4. One way data Binding. [only parent to child data pass](child only communicate with events). 
+5. Single page Application. [React Routing]
+ 
+
+NPM - used to maintain the dependencies & It will install the dependencies and store in node modules in our local system.
+
+NPX - It will take packages from NPM repository and create the project (or)It will execute the CLI command.
+    - It will execute the dependencies on cli command and create the project.
+
+
+
+NPM Takes package.json as the source and install all the dependencies in the node modules. 
+UseState -- we can maintain the state.
+
+
+
+If we clone the project in git node modules will not be available
+
+so, install node modules by npm install.
+
+npm install --global yarn
+UseEffect -- We can maintain the lifecycle methods.
+
+
+
+Webpack - It is an module boundler takes care of configuration behind the scenes. like script , styles etc..
+
+
+
+{10+20}---expression in write inside this in jsx // ans:30

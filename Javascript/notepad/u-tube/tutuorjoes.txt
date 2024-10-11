@@ -1,3 +1,8 @@
+javascript is an dynamic prgmg language ==>we can the datatypes at run time.
+
+                                           We can achieve javascript as static programming                                           language by using typescript.
+
+
 console types:
 
 console.log('hello wolrd');
@@ -13,14 +18,3 @@ console.timer('timer start');
 }
 
 console.timeEnd('timer end');
-
-
-2)type-coresion
-      *Adding string and number
-
-3)operators:
-  *arithmetic
-  *Assignment
-  *comparsion
-  *logical
-

@@ -6,6 +6,9 @@ import Footer from './component/footer/footer';
 import Props from './Training/Day3';
 import Child from './Training/Child';
 import Body from './component/body/Body';
+import Day4 from './Training/Day4';
+
+import Form from './Task/Components/forms/Form';
 
 function App() {
   return (
@@ -13,9 +16,12 @@ function App() {
      {/* <Resume></Resume> */}
      {/* <Header></Header> */}
     {/* <Footer></Footer> */}
-    <Props></Props>
+    {/* <Props></Props> */}
     {/* <Child></Child>
     <Body></Body> */}
+    
+    {/* <Day4></Day4> */}
+  <Form></Form>
    </>
   );
 }

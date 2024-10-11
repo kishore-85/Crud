@@ -2,23 +2,19 @@
 import { useState } from "react";
 import "./Todo.css";
 import Li from "./branch_comp/Li";
+import Input from "./branch_comp/Input";
 function Todolist(){
    
-   const[ipval , setipval] = useState('');
+   
    const [user_val, set_userval]= useState([])
 
-    function handleChange(e){       
-        
-         let e_val = e.target.value;
-         setipval(e_val);       
-       
-    }
+    
 
     function handlesubmit(e){
-        e.preventDefault()
+        
        
         set_userval((pre_val)=>{
-            return [...pre_val , ipval]
+            return [...pre_val , e]
         })
        
         
@@ -42,15 +38,12 @@ function Todolist(){
         <>
            <h1>TodoList</h1>
            <div id="container_1">
-               <form id="form" onSubmit={handlesubmit}>
-                   <label id="lbl">Enter your UserName:</label><br></br>
-                    <input type="text" id="ip1" name="ip" onChange={handleChange}></input><br></br>
-                    <br></br>
-                     <input id="submit" type="submit"></input>
-               </form>
-              
+                <Input  onClickFunction={handlesubmit}></Input>              
            </div>
-         <Li arrval={user_val} onClickFunction={handledelete}></Li>
+           <div>
+                <Li arrval={user_val} onClickFunction={handledelete}></Li>
+           </div>
+           
         </>
     )
 }

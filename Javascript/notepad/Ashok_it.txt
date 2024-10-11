@@ -1,0 +1,23 @@
+React js - is an javascript libraries.
+
+For an each action DOM is re-constructed in other frameworks , so react js was developed
+
+
+React features:
+
+1. Virtual Dom
+2. Jsx
+3. Component's Based architecture.
+4. One way data Binding. [only parent to child data pass](child only communicate with events). 
+5. Single page Application. [React Routing]
+ 
+
+NPM - used to maintain the dependencies & It will install the dependencies and store in node modules in our local system.
+
+NPX - It will take packages from NPM repository and create the project (or)It will execute the CLI command.
+    - It will execute the dependencies on cli command and create the project.
+
+
+UseState -- we can maintain the state.
+
+UseEffect -- We can maintain the lifecycle methods.
