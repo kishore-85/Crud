@@ -1,0 +1,72 @@
+#form{
+    width: 400px;
+    height: 50vh;
+    background-color: aliceblue;
+    position: relative;
+    left: 30%;
+    top:20px;
+    padding: 20px;
+    color: rgb(238, 60, 60);
+}
+.inp{
+    /* margin-bottom: 15px; */
+}
+#task_name{
+    position: relative;
+    left: 20px;
+    padding: 10px;
+}
+#txt_area{
+    position: relative;
+    top: 50px;
+    left: 10px;
+    padding: 5px 10px;
+}
+.cls_btn{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    top:80px;
+    left:40%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.list_comp{
+    position: relative;
+}
+#todo{
+    position: absolute;
+    top:50px;
+    left:10%;
+    width: 300px;
+    height: 50vh;
+    background-color: rgb(156, 170, 214);
+}
+
+#inprogress{
+    position: absolute;
+    top:50px;
+    left:32%;
+    width: 300px;
+    height: 50vh;
+    background-color: rgb(156, 170, 214);
+}
+#review{
+    position: absolute;
+    top:50px;
+    left:54%;
+    width: 300px;
+    height: 50vh;
+    background-color: rgb(156, 170, 214);
+}
+
+#Done{
+    position: absolute;
+    top:50px;
+    left:76%;
+    width: 300px;
+    height: 50vh;
+    background-color: rgb(156, 170, 214);
+}
