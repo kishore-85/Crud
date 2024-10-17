@@ -35,50 +35,53 @@ function Kanban() {
    function handledelete(e){      
        set_arr((pre)=>{
            return pre.filter((val,indx)=>{
-               return !(indx==e);
+               return !(indx===e);
            })
        })
    }
 
   function handleInprogress(e,indx){
-    //   console.log('prog',e)
+   
       
       set_inprog((pre)=>{
           return [...pre,e]
       })
       
-    //   console.log('prog val',arr_Inprogress)
+      set_arr((pre)=>{
+          return pre.filter((val,ind)=>{
+              return !(ind===indx)
+          })
+      })
+    
   } 
 
-  function handleCodeReview(e){
+  function handleCodeReview(e,indx){
     
     set_arrrview((pre)=>{
         return [...pre , e]
     })
-    // console.log('review',arr_review)
-   
-} 
-
-
-function handleCodeReview(e){
-    
-    set_arrrview((pre)=>{
-        return [...pre , e]
+    set_inprog((pre)=>{
+        return pre.filter((val,ind)=>{
+            return !(ind===indx)
+        })
     })
-    // console.log('review',arr_review)
    
 } 
 
-function handleDone(e){
-    
-    // let Done_val =  arr_review.splice(e,1)
-    // console.log('value of done',Done_val)
 
+
+
+function handleDone(e,indx){    
+    
     set_done((pre)=>{
         return [...pre,e]
     })
-    // set_done([...arr_done,Done_val])
-    // console.log('done fun',arr_done)
+    set_arrrview((pre)=>{
+        return pre.filter((val,ind)=>{
+            return !(ind===indx)
+        })
+    })
+
    
 } 
   return (

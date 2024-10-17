@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 function Done(props) {
   // console.log('done comp',props.data)
  
   return (
-    <div id="Done">Done
+    <div id="Done">
+       <h2 style={{textAlign:"center"}}>Completed</h2>
     
     <table>
         <tbody>
