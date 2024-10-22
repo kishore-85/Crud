@@ -12,7 +12,7 @@ function Todo(props) {
              return <tr>
                         <td>{val.task}</td> 
                         <td><button  id="progress" onClick={()=>{props.funprog(val,indx)}}>Inprogress</button></td> 
-                        <td ><button id="edit">Edit</button></td> 
+                        <td ><button id="edit" onClick={()=>{props.funedit(val,indx)}}>Edit</button></td> 
                         <td ><button id="delete" onClick={()=>{props.fun_delete(indx)}}>delete</button></td> 
                     </tr>
            })
