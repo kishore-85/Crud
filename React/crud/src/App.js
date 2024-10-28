@@ -9,8 +9,27 @@ import Body from './component/body/Body';
 import Day4 from './Training/Day4';
 
 import Form from './Task/Components/forms/Form';
+import Usememo from './Training/hooks/Usememo';
+import Routing from './Training/Routing/Category';
+import { Route, Routes } from 'react-router-dom';
+import Login from './Training/Routing/Login';
+import Error from './Training/Routing/Error';
+import Category from './Training/Routing/Category';
+import Homepage from './Training/Routing/Homepage';
+import { useState } from 'react';
+import Addcategory from './Training/Routing/Addcategory';
+import Home from './Training/Nancy_routes/Home';
+import { EDIT_PURCHASE, HOME,  PURCHASE } from './const';
+import Purchase from './Training/Nancy_routes/chld_comp/Purchase';
+import Edit_purchase from './Training/Nancy_routes/chld_comp/Edit_purchase';
 
 function App() {
+  const [login,setlogin] = useState(false)
+
+  function handlelogin(){
+    setlogin(!login)
+  }
+
   return (
    <>
      {/* <Resume></Resume> */}
@@ -19,9 +38,39 @@ function App() {
     {/* <Props></Props> */}
     {/* <Child></Child>
     <Body></Body> */}
-    
+    {/* <Usememo></Usememo> */}
     {/* <Day4></Day4> */}
-  <Form></Form>
+  {/* <Form></Form> */}
+  
+  {/* //1 */}
+  {/* <Routes>   
+
+    {login==true?<Route path='/' element={<Homepage></Homepage>}/>: <Route path='/' element={<Login></Login>}/>}      
+    
+    <Route path='/category'>
+      <Route index element={<Category></Category>}></Route>
+      <Route path=":Add_category" element={<Addcategory></Addcategory>}></Route>
+    </Route>
+    <Route path='*' element={<Error></Error>}></Route>
+  </Routes>
+    
+    <button onClick={handlelogin}>login</button> */}
+
+
+    {/* //2 nancy training */}
+
+    <Routes>
+
+      <Route path={HOME} element={<Home></Home>}/>
+
+        <Route path={PURCHASE}>
+              <Route index element={<Purchase></Purchase>}/>
+              {/* <Route path={EDIT_PURCHASE} element={<Edit_purchase></Edit_purchase>}/>    //Nested routes */}
+
+              <Route path={`${EDIT_PURCHASE}/:id`} element={<Edit_purchase></Edit_purchase>}/>
+        </Route>
+    </Routes>
+ 
    </>
   );
 }
