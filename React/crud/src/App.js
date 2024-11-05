@@ -22,6 +22,11 @@ import Home from './Training/Nancy_routes/Home';
 import { EDIT_PURCHASE, HOME,  PURCHASE } from './const';
 import Purchase from './Training/Nancy_routes/chld_comp/Purchase';
 import Edit_purchase from './Training/Nancy_routes/chld_comp/Edit_purchase';
+import Uselocation from './Training/uselocation/Uselocation';
+import Uselocation2 from './Training/uselocation/Uselocation2';
+import Homee from './Task/Components/Home';
+import Cutomer from './Training/uselocation/Search_query/Cutomer';
+import Customer_list from './Training/uselocation/Search_query/Customer_list';
 
 function App() {
   const [login,setlogin] = useState(false)
@@ -61,16 +66,25 @@ function App() {
 
     <Routes>
 
-      <Route path={HOME} element={<Home></Home>}/>
+      {/* <Route path={HOME} element={<Home></Home>}/> */}
 
-        <Route path={PURCHASE}>
+        {/* <Route path={PURCHASE}>
               <Route index element={<Purchase></Purchase>}/>
-              {/* <Route path={EDIT_PURCHASE} element={<Edit_purchase></Edit_purchase>}/>    //Nested routes */}
+              <Route path={EDIT_PURCHASE} element={<Edit_purchase></Edit_purchase>}/>    //Nested routes
 
               <Route path={`${EDIT_PURCHASE}/:id`} element={<Edit_purchase></Edit_purchase>}/>
-        </Route>
+        </Route> */}
+
+        {/* <Route path="/" element={<Uselocation></Uselocation>}></Route>
+        <Route path="/location2" element={<Uselocation2></Uselocation2>}></Route> */}
+         
+         <Route path="/" element={<Homee></Homee>}/>
+         <Route path="/customer/:id" element={<Cutomer></Cutomer>}/>
+         <Route path="/customer_list" element={<Customer_list></Customer_list>}/>
     </Routes>
  
+
+     
    </>
   );
 }
